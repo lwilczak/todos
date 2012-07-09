@@ -18,10 +18,10 @@ Info:
 todo[priority_id] - id of selected priority
 
 6. update todo
-PUT http://localhost:3001/todos/[id].xml where [id] is ID of todo, with  HTTP Basic authentication
+PUT http://localhost:3001/todos/[id].xml where [id] is ID of todo, with  HTTP Basic authentication, body: todo[subject]=this+is+subject&todo[priority_id]=2&todo[content]=content+of+todo
 
 7. delete todo
-DELETE http://localhost:3001/todos/[id].xml where [id] is ID of todo, with  HTTP Basic authentication, body: todo[subject]=this+is+subject&todo[priority_id]=2&todo[content]=content+of+todo
+DELETE http://localhost:3001/todos/[id].xml where [id] is ID of todo, with  HTTP Basic authentication
 
 
 
