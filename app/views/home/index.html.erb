@@ -1,0 +1,7 @@
+<h1>Home</h1>
+<% if user_signed_in? %>
+  <%= link_to "My Todos list", todos_path %>
+<% else %>
+  My must be logged in to see TODO list.
+<% end %>
+
