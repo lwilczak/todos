@@ -1,0 +1,34 @@
+REST API for "todos"
+
+1. create account
+POST http://localhost:3001/todos.xml, body: user[email]=my@email.com&user[password]=Password1&user[password_confirmation]=Password1
+
+2. list of todos
+GET http://localhost:3001/todos.xml with HTTP Basic authentication
+
+3. todo details
+GET http://localhost:3001/todos/[id].xml where [id] is ID of todo, with  HTTP Basic authentication
+
+4. get priorities
+GET http://localhost:3001/priorities.xml with HTTP Basic authentication
+
+5. add new todo
+POST http://localhost:3001/todos.xml with HTTP Basic authentication, body: todo[subject]=this+is+subject&todo[priority_id]=2&todo[content]=content+of+todo
+Info:
+todo[priority_id] - id of selected priority
+
+6. update todo
+PUT http://localhost:3001/todos/[id].xml where [id] is ID of todo, with  HTTP Basic authentication
+
+7. delete todo
+DELETE http://localhost:3001/todos/[id].xml where [id] is ID of todo, with  HTTP Basic authentication
+
+
+
+
+
+
+
+
+
+
